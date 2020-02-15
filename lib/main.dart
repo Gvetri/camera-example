@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:path_provider/path_provider.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -66,6 +67,7 @@ class _LandingScreenState extends State<LandingScreen> {
 
   Widget _setImageView() {
     if (imageFile != null) {
+//      storeImage();
       return Image.file(imageFile, width: 400, height: 400);
     } else {
       return Text("No Image Selected");
