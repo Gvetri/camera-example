@@ -67,7 +67,6 @@ class _LandingScreenState extends State<LandingScreen> {
 
   Widget _setImageView() {
     if (imageFile != null) {
-//      storeImage();
       return Image.file(imageFile, width: 400, height: 400);
     } else {
       return Text("No Image Selected");
